@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private String[] currencies = {"INR", "USD", "JPY", "EUR"};
 
     @Override
+    //project
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
