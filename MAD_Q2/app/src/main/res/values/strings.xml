@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Media Player Pro</string>
+    <string name="title_main">Ultimate Media Player</string>
+    <string name="audio_header">Audio Player (Disk)</string>
+    <string name="no_file">No file selected</string>
+    <string name="btn_open_audio">Open Audio File</string>
+    <string name="video_header">Video Player (URL/Disk)</string>
+    <string name="btn_load_url">Stream Video URL</string>
+    <string name="btn_select_video">Select Video File</string>
+    <string name="btn_restart">Restart Video</string>
+
+    <string name="status_loaded">Loaded: %1$s</string>
+    <string name="status_playing">Status: Playing Audio...</string>
+    <string name="status_paused">Status: Audio Paused</string>
+    <string name="status_stopped">Status: Audio Stopped</string>
+
+    <string name="desc_play">Play</string>
+    <string name="desc_pause">Pause</string>
+    <string name="desc_stop">Stop</string>
+</resources>
