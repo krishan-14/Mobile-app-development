@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:paddingHorizontal="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SensorDash"
+                    android:textSize="28sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/header_title"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Real-time System Monitor"
+                    android:textSize="14sp"
+                    android:textColor="@color/header_subtitle" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E0E0E0">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@android:drawable/ic_menu_manage"
+                    android:padding="10dp"
+                    app:tint="@color/accent_blue" />
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/imgAcc" android:layout_width="48dp" android:layout_height="48dp" android:background="@color/box_blue_bg" android:padding="10dp" android:src="@android:drawable/ic_menu_compass" app:tint="@color/accent_blue" />
+                    <LinearLayout android:layout_toEndOf="@id/imgAcc" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Accelerometer" android:textStyle="bold" android:textSize="18sp" android:textColor="@color/text_main"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Linear acceleration (m/s²)" android:textColor="@color/text_sub" android:textSize="12sp"/>
+                    </LinearLayout>
+                    <View android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:layout_width="10dp" android:layout_height="10dp" android:background="@drawable/value_box_bg" android:backgroundTint="@color/status_green"/>
+                </RelativeLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3" android:layout_marginTop="20dp">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/value_box_bg" android:gravity="center" android:padding="12dp" android:layout_marginEnd="6dp" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X-axis" android:textColor="@color/accent_blue" android:textSize="11sp"/>
+                        <TextView android:id="@+id/tvX" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:textColor="@color/accent_blue" android:textSize="18sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/value_box_bg" android:gravity="center" android:padding="12dp" android:layout_marginEnd="6dp" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Y-axis" android:textColor="@color/accent_blue" android:textSize="11sp"/>
+                        <TextView android:id="@+id/tvY" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.81" android:textColor="@color/accent_blue" android:textSize="18sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/value_box_bg" android:gravity="center" android:padding="12dp" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Z-axis" android:textColor="@color/accent_blue" android:textSize="11sp"/>
+                        <TextView android:id="@+id/tvZ" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:textColor="@color/accent_blue" android:textSize="18sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="28dp" app:cardElevation="0dp" android:layout_marginBottom="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/imgLight" android:layout_width="48dp" android:layout_height="48dp" android:background="@color/badge_yellow_bg" android:padding="10dp" android:src="@android:drawable/ic_menu_day" app:tint="@color/progress_orange" />
+                    <LinearLayout android:layout_toEndOf="@id/imgLight" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Light" android:textStyle="bold" android:textSize="18sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ambient light level (lux)" android:textColor="@color/text_sub" android:textSize="12sp"/>
+                    </LinearLayout>
+                    <TextView android:layout_alignParentEnd="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/value_box_bg" android:backgroundTint="@color/badge_yellow_bg" android:padding="8dp" android:text="Indoors\nWell lit" android:textColor="@color/progress_orange" android:textSize="10sp" android:textStyle="bold" android:gravity="center" />
+                </RelativeLayout>
+                <TextView android:id="@+id/tvLight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 lux" android:textSize="32sp" android:layout_marginTop="16dp" android:textColor="@color/text_main" android:textStyle="bold"/>
+                <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/lightProgress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:trackThickness="12dp" app:trackCornerRadius="6dp" app:indicatorColor="@color/progress_orange" app:trackColor="@color/box_blue_bg" android:progress="0" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="28dp" app:cardElevation="0dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/imgProx" android:layout_width="48dp" android:layout_height="48dp" android:background="@color/prox_green_bg" android:padding="10dp" android:src="@android:drawable/ic_menu_sort_by_size" app:tint="@color/status_green" />
+                    <LinearLayout android:layout_toEndOf="@id/imgProx" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Proximity" android:textStyle="bold" android:textSize="18sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Object distance (cm)" android:textColor="@color/text_sub" android:textSize="12sp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="20dp" android:gravity="center_vertical">
+                    <com.google.android.material.progressindicator.CircularProgressIndicator android:layout_width="wrap_content" android:layout_height="wrap_content" app:indicatorSize="80dp" app:trackThickness="10dp" app:indicatorColor="@color/status_green" app:trackColor="@color/prox_green_bg" android:progress="100" />
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="24dp">
+                        <TextView android:id="@+id/tvProx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5 cm" android:textSize="32sp" android:textStyle="bold" android:textColor="@color/text_main"/>
+                        <TextView android:id="@+id/tvProxStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No object near" android:background="@color/prox_green_bg" android:paddingHorizontal="8dp" android:paddingVertical="4dp" android:textColor="@color/status_green" android:textSize="12sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

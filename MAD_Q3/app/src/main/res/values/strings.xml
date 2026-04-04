@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Sensor App</string>
+
+    <string name="lux_value">%1$d lux</string>
+
+    <string name="axis_value">Value: %1$.2f</string>
+</resources>
