@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ic_image_error.xml
+    Shown by Glide when an image file cannot be loaded (e.g. corrupted / missing).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Light red background -->
+    <path
+        android:fillColor="#FFEBEE"
+        android:pathData="M0,0 L24,0 L24,24 L0,24 Z" />
+
+    <!-- Broken-image icon in red -->
+    <path
+        android:fillColor="#EF9A9A"
+        android:pathData="M21,5v6.59l-3,-3.01 -4,4.01 -4,-4 -4,3.99L3,9.59V5c0,-1.1 0.9,-2 2,-2h14c1.1,0 2,0.9 2,2zM18,11.42l3,3.01V19c0,1.1 -0.9,2 -2,2H5c-1.1,0 -2,-0.9 -2,-2v-6.58l4,-3.99 4,4 4,-4.01 3,3z" />
+
+    <!-- Small X mark -->
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M19,3L5,17l1.41,1.41L20.41,4.41z" />
+
+</vector>

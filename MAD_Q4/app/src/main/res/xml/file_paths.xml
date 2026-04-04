@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FileProvider paths configuration.
+    Allows the camera intent to write a photo to our app's external files directory
+    without needing WRITE_EXTERNAL_STORAGE on Android 10+.
+-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Covers Context.getExternalFilesDir() -->
+    <external-files-path name="my_images" path="Pictures/" />
+
+    <!-- Covers Environment.getExternalStorageDirectory() for older APIs -->
+    <external-path name="external_files" path="." />
+</paths>

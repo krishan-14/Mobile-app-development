@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Photo Gallery</string>
+
+    <!-- MainActivity -->
+    <string name="btn_take_photo">Take Photo</string>
+    <string name="btn_choose_folder">Choose Folder</string>
+    <string name="subtitle_home">Take photos or browse a folder</string>
+    <string name="info_save_location">Photos are saved to:\n/Pictures/ in app storage</string>
+
+    <!-- GalleryActivity -->
+    <string name="label_images">images</string>
+    <string name="label_image">image</string>
+    <string name="error_folder_not_found">Folder not found.</string>
+    <string name="error_no_folder_path">No folder path received.</string>
+
+    <!-- ImageDetailActivity -->
+    <string name="title_image_details">Image Details</string>
+    <string name="label_name">Name</string>
+    <string name="label_path">Path</string>
+    <string name="label_size">Size</string>
+    <string name="label_date_taken">Date taken</string>
+    <string name="btn_delete">Delete Image</string>
+
+    <!-- Delete dialog -->
+    <string name="dialog_delete_title">Delete Image?</string>
+    <string name="dialog_delete_message">This will permanently delete this image from your device. This action cannot be undone.</string>
+    <string name="dialog_btn_delete">Delete</string>
+    <string name="dialog_btn_cancel">Cancel</string>
+
+    <!-- Toast messages -->
+    <string name="toast_photo_saved">Photo saved!</string>
+    <string name="toast_deleted">Image deleted successfully.</string>
+    <string name="toast_delete_failed">Failed to delete image. Check permissions.</string>
+    <string name="toast_grant_permissions">Please grant permissions first.</string>
+    <string name="toast_permissions_required">Permissions are required for this app to work.</string>
+</resources>

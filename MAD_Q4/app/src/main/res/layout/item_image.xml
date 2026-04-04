@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    item_image.xml — One cell in the 3-column gallery grid.
+
+    The ImageView is square: width = match_parent, height = same as width
+    achieved via android:adjustViewBounds + a fixed aspect via code, or simply
+    by setting the height equal to the calculated column width in the adapter.
+    Here we use a FrameLayout wrapper so the ImageView always fills its parent.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+    <!--
+        ivGridImage — fills the FrameLayout.
+        scaleType="centerCrop" keeps the image square without distortion.
+        The actual height (= width) is set programmatically in ImageAdapter
+        to make it truly square regardless of screen density.
+    -->
+    <ImageView
+        android:id="@+id/ivGridImage"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Gallery image"
+        android:background="#E0E0E0" />
+
+</FrameLayout>

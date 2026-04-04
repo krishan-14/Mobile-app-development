@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand blue -->
+    <color name="colorPrimary">#1565C0</color>
+    <color name="colorPrimaryDark">#003c8f</color>
+    <color name="colorPrimaryLight">#E3F2FD</color>
+
+    <!-- Accent -->
+    <color name="colorAccent">#E8950A</color>
+
+    <!-- Backgrounds -->
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorSurface">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="colorTextPrimary">#111111</color>
+    <color name="colorTextSecondary">#888888</color>
+    <color name="colorDivider">#EEEEEE</color>
+
+    <!-- Delete / danger -->
+    <color name="colorDanger">#C62828</color>
+    <color name="colorDangerLight">#FFEBEE</color>
+
+    <!-- Image grid placeholder -->
+    <color name="colorPlaceholder">#E0E0E0</color>
+
+    <!-- White -->
+    <color name="white">#FFFFFF</color>
+</resources>
